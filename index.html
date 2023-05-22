@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript">
+            var options = {
+                "ripplesNumber": {
+                    description: "Ripples number",
+                    select: "#page_wrap",
+                    attr: 'data-ripples',
+                    type: 'int',
+                    values: [1, 100],
+                    default: 15,
+                },
+                "ripplesSpeed": {
+                    description: "Ripples propagation speed",
+                    select: "#page_wrap",
+                    attr: 'data-speed',
+                    type: 'int',
+                    values: [100, 10000],
+                    default: 4000,
+                },
+                "textSpeed": {
+                    description: "Text animation speed",
+                    select: "#page_wrap",
+                    attr: 'data-text-speed',
+                    type: 'int',
+                    values: [100, 10000],
+                    default: 3000,
+                },
+                "mainColor": {
+                    description: "Main color",
+                    select: "#page_wrap",
+                    attr: 'data-color',
+                    type: 'color',
+                    default: "#ff565c",
+                },
+                "date": {
+                	description: "Date",
+                	select: ".countdown",
+                	attr: 'date',
+                	type: 'date',
+                	default: '2029-01-01',
+                },
+                "countdownColor": {
+                    description: "Countdown color",
+                    select: ".countdown",
+                    attr: 'data-color',
+                    type: 'color',
+                    default: "#ff565c",
+                },
+            };
+        </script>
+        <script type="text/javascript" src="http://preview.stephino.com/js/frame.js"></script>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <title>Pond</title>
+        <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap-responsive.css"/>
+        <link rel="stylesheet" href="css/bootstrap-modal.css"/>
+        <link rel="stylesheet" href="css/ie.css"/>
+        <link rel="stylesheet" href="css/jquery.jqplot.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body class="red">
+        <div id="page_wrap" data-ripples="15" data-speed="4000" data-text-speed="3000" data-pattern="wood.png" data-color="#ff565c">
+            <section class="container row-fluid mainTab">
+                <div class="offset2 span8">
+                    <div class="title">Pond Inc.</div>
+                    <div class="content">
+                        <p>We are a <b>creative</b> agency based in Europe</p>
+                        <p>We are preparing to launch our amazing new website</p>
+                    </div>
+                    <div class="footer">
+                        <!--<a href="javascript:void(0);" class="social youtube">Youtube</a>-->
+                        <!--<a href="javascript:void(0);" class="social yandex">Yandex</a>-->
+                        <!--<a href="javascript:void(0);" class="social vkontakte">Vkontakte</a>-->
+                        <!--<a href="javascript:void(0);" class="social vk">Vk</a>-->
+                        <a href="javascript:void(0);" class="social vimeo">Vimeo</a>
+                        <a href="javascript:void(0);" class="social twitter">Twitter</a>
+                        <!--<a href="javascript:void(0);" class="social tumblr">Tumblr</a>-->
+                        <!--<a href="javascript:void(0);" class="social steam">Steam</a>-->
+                        <a href="javascript:void(0);" class="social stackoverflow">Stackoverflow</a>
+                        <!--<a href="javascript:void(0);" class="social soundcloud">Soundcloud</a>-->
+                        <a href="javascript:void(0);" class="social skype">Skype</a>
+                        <!--<a href="javascript:void(0);" class="social share">Share</a>-->
+                        <!--<a href="javascript:void(0);" class="social rss">Rss</a>-->
+                        <!--<a href="javascript:void(0);" class="social readability">Readability</a>-->
+                        <!--<a href="javascript:void(0);" class="social read-it-later">Read-it-Later</a>-->
+                        <!--<a href="javascript:void(0);" class="social pocket">Pocket</a>-->
+                        <a href="javascript:void(0);" class="social pinterest">Pinterest</a>
+                        <!--<a href="javascript:void(0);" class="social picasa">Picasa</a>-->
+                        <!--<a href="javascript:void(0);" class="social openid">Openid</a>-->
+                        <!--<a href="javascript:void(0);" class="social myspace">Myspace</a>-->
+                        <!--<a href="javascript:void(0);" class="social moikrug">Moikrug</a>-->
+                        <a href="javascript:void(0);" class="social linked-in">Linked-in</a>
+                        <!--<a href="javascript:void(0);" class="social lifejournal">Lifejournal</a>-->
+                        <!--<a href="javascript:void(0);" class="social lastfm">Lastfm</a>-->
+                        <!--<a href="javascript:void(0);" class="social jabber">Jabber</a>-->
+                        <!--<a href="javascript:void(0);" class="social instapaper">Instapaper</a>-->
+                        <!--<a href="javascript:void(0);" class="social habrahabr">Habrahabr</a>-->
+                        <!--<a href="javascript:void(0);" class="social google">Google</a>-->
+                        <!--<a href="javascript:void(0);" class="social github-octoface">Github-octoface</a>-->
+                        <!--<a href="javascript:void(0);" class="social github-circle">Github-circle</a>-->
+                        <!--<a href="javascript:void(0);" class="social foursquare">Foursquare</a>-->
+                        <a href="javascript:void(0);" class="social flickr">Flickr</a>
+                        <!--<a href="javascript:void(0);" class="social flattr">Flattr</a>-->
+                        <a href="javascript:void(0);" class="social facebook">Facebook</a>
+                        <!--<a href="javascript:void(0);" class="social evernote">Evernote</a>-->
+                        <!--<a href="javascript:void(0);" class="social email">Email</a>-->
+                        <!--<a href="javascript:void(0);" class="social dropbox">Dropbox</a>-->
+                        <!--<a href="javascript:void(0);" class="social blogspot">Blogspot</a>-->
+                        <!--<a href="javascript:void(0);" class="social bitbucket">Bitbucket</a>-->
+                        <!--<a href="javascript:void(0);" class="social youtube-play">Youtube-play</a>-->
+                    </div>
+                </div>
+            </section>
+            <div class="slide">
+                <h2>Countdown</h2>
+                <div class="countdown" date="2029-01-01" data-color="#ff565c"></div>
+            </div>
+            <div class="slide">
+                <h2>Newsletter</h2>
+                <h3>Subscribe to our awesome newsletter!</h3>
+                <form method="post" action="newsletter.php" class="validate text-center">
+                    <input class="input-block-level" name="email" type="email" placeholder="E-mail" required />
+                    <span class="btn btn-large btn-block submit"><i class="icon-envelope icon-white"></i> Submit</span>
+                </form>
+            </div>
+            <div class="slide">
+                <h2>Contact</h2>
+                <form method="post" action="contact.php" class="validate text-center">
+                    <input class="input-block-level" name="name" type="text" placeholder="Name" required />
+                    <input class="input-block-level" name="email" type="email" placeholder="E-mail" required />
+                    <textarea class="input-block-level" name="content" placeholder="Your message" required ></textarea>
+                    <span class="btn  btn-large btn-block submit"><i class="icon-ok icon-white"></i> Send</span>
+                </form>
+            </div>
+        </div>
+        
+        <!--Javascript-->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-modal.js"></script>
+        <script type="text/javascript" src="js/bootstrap-modalmanager.js"></script>
+        <script type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+        <script type="text/javascript" src="js/jqplot.donutRenderer.min.js"></script>
+        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="js/additional-methods.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="js/jquery.mCustomScrollbar.js"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+    </body>
+</html>
