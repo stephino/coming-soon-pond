@@ -1,0 +1,629 @@
+/**
+ * TABLE OF CONTENTS
+ * 
+ * 1. General
+ *   1.1. Fonts
+ *       1.1.1. Lobster
+ *       1.1.2. PT Sans
+ *       1.1.3. Novecento Wide
+ *       1.1.4. Batch
+ *       1.1.5. Ebis
+ *       1.1.6. Entypo
+ *       1.1.7. Grands
+ *   1.2. Body
+ *       1.2.1. Selection colors
+ *       1.2.2. Icons
+ *       1.2.3. Headings
+ *       1.2.4. Anchors
+ *       1.2.5. Page wrap
+ *   1.3. Loading
+ *       1.3.1. Ripples
+ *       1.3.2. Main tab
+ *       1.3.3. Logo
+ *       1.3.4. Complete tab
+ *       1.3.5. Percentage bar
+ * 2. Social
+ * 3. Slides
+ *   3.1. Slide pages
+ * 4. Cells
+ * 5. Form tweaks
+ * 6. Responsiveness
+ *   6.1. Max 479px
+ *   6.2. Min 480px
+ *   6.3. Min 768px
+ *   6.4. Min 980px
+ *   6.5. Min 1200px
+ *   6.6. Portrait
+ *   6.7. Landscape
+ *
+ * Copyright 2013 Stephino
+ */
+
+/* 1. General */
+/** 1.1. Fonts **/
+
+/*** 1.1.1. Lobster ***/
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+/*** 1.1.2. PT Sans ***/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,latin-ext,cyrillic);
+
+/*** 1.1.3. Novecento Wide ***/
+@font-face {font-family: 'NovecentowideBold';src: url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.eot');src: url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.woff') format('woff'), url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_bold_macroman/Novecentowide-Bold-webfont.svg#NovecentowideBold') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideBook';src: url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.eot');src: url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.woff') format('woff'), url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_book_macroman/Novecentowide-Book-webfont.svg#NovecentowideBook') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideDemiBold';src: url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.eot');src: url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.woff') format('woff'), url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_demibold_macroman/Novecentowide-DemiBold-webfont.svg#NovecentowideDemiBold') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideLight';src: url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.eot');src: url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.woff') format('woff'), url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_light_macroman/Novecentowide-Light-webfont.svg#NovecentowideLight') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideMedium';src: url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.eot');src: url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.woff') format('woff'), url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_medium_macroman/Novecentowide-Medium-webfont.svg#NovecentowideMedium') format('svg');font-weight: normal;font-style: normal;}
+@font-face {font-family: 'NovecentowideNormal';src: url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.eot');src: url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.eot?#iefix') format('embedded-opentype'), url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.woff') format('woff'), url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.ttf') format('truetype'), url('../img/fonts/novecentowide_normal_macroman/Novecentowide-Normal-webfont.svg#NovecentowideNormal') format('svg');font-weight: normal;font-style: normal;}
+
+/*** 1.1.4. Batch ***/
+@font-face {
+    font-family: 'batchregular';
+    src: url('../img/fonts/batch/batch-icons-webfont.eot');
+    src: url('../img/fonts/batch/batch-icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/batch/batch-icons-webfont.woff') format('woff'),
+         url('../img/fonts/batch/batch-icons-webfont.ttf') format('truetype'),
+         url('../img/fonts/batch/batch-icons-webfont.svg#batchregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** 1.1.5. Ebis ***/
+@font-face {
+    font-family: 'ebisuregular';
+    src: url('../img/fonts/ebis/ebisuregular-webfont.eot');
+    src: url('../img/fonts/ebis/ebisuregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisuregular-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisuregular-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisuregular-webfont.svg#ebisuregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ebisuextralight';
+    src: url('../img/fonts/ebis/ebisuextralight-webfont.eot');
+    src: url('../img/fonts/ebis/ebisuextralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisuextralight-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisuextralight-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisuextralight-webfont.svg#ebisuextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ebisulight';
+    src: url('../img/fonts/ebis/ebisulight-webfont.eot');
+    src: url('../img/fonts/ebis/ebisulight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisulight-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisulight-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisulight-webfont.svg#ebisulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ebisubold';
+    src: url('../img/fonts/ebis/ebisubold-webfont.eot');
+    src: url('../img/fonts/ebis/ebisubold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../img/fonts/ebis/ebisubold-webfont.woff') format('woff'),
+         url('../img/fonts/ebis/ebisubold-webfont.ttf') format('truetype'),
+         url('../img/fonts/ebis/ebisubold-webfont.svg#ebisubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*** 1.1.6. Entypo ***/
+/*Entypo pictograms by Daniel Bruce â€” www.entypo.com*/
+@font-face {
+    font-family: "entypo";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../img/fonts/entypo/entypo.eot?#iefix") format("embedded-opentype"), url("../img/fonts/entypo/entypo.woff") format("woff"), url("../img/fonts/entypo/entypo.ttf") format("truetype"), url("../img/fonts/entypo/entypo.svg#entypo") format("svg");
+}
+@font-face {
+    font-family: "entypo_social";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../img/fonts/entypo/entypo-social.eot?#iefix") format("embedded-opentype"), url("../img/fonts/entypo/entypo-social.woff") format("woff"), url("../img/fonts/entypo/entypo-social.ttf") format("truetype"), url("../img/fonts/entypo/entypo-social.svg#entypo-social") format("svg");
+}
+@font-face {
+    font-family: "entypo-logo";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../img/fonts/entypo/entypo-logo-webfont.eot?#iefix") format("embedded-opentype"), url("../img/fonts/entypo/entypo-logo-webfont.woff") format("woff"), url("../img/fonts/entypo/entypo-logo-webfont.ttf") format("truetype"), url("../img/fonts/entypo/entypo-logo-webfont.svg#entypo-logo") format("svg");
+}
+
+/*** 1.1.7. Grands ***/
+@font-face {
+    font-family: "Grands";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../img/fonts/grands/Grands.eot?#iefix") format("embedded-opentype"), url("../img/fonts/grands/Grands.woff") format("woff"), url("../img/fonts/grands/Grands.ttf") format("truetype"), url("../img/fonts/grands/Grands.svg#Grands") format("svg");
+}
+
+/** 1.2. Body **/
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: #000;
+    overflow: hidden;
+    text-rendering: geometricprecision;
+}
+
+/** 1.2.1. Selection colors ***/
+::selection { 
+    color: #fff;
+    text-shadow: none !important;
+}
+::-moz-selection {
+    color: #fff;
+    text-shadow: none !important;
+}
+body.red ::selection { 
+    background: red;
+}
+body.red ::-moz-selection {
+    background: red;
+}
+body.green ::selection { 
+    background: #7fcb54;
+}
+body.green ::-moz-selection {
+    background: #7fcb54;
+}
+body.orange ::selection { 
+    background: orange;
+}
+body.orange ::-moz-selection {
+    background: orange;
+}
+body.yellow ::selection { 
+    background: yellow;
+}
+body.yellow ::-moz-selection {
+    background: yellow;
+}
+body.blue ::selection { 
+    background: #11b3f2;
+}
+body.blue ::-moz-selection {
+    background: #11b3f2;
+}
+body.indigo ::selection { 
+    background: indigo;
+}
+body.indigo ::-moz-selection {
+    background: indigo;
+}
+body.violet ::selection { 
+    background: violet;
+}
+body.violet ::-moz-selection {
+    background: violet;
+}
+body.black ::selection { 
+    background: black;
+}
+body.black ::-moz-selection {
+    background: black;
+}
+body.white ::selection { 
+    background: white;
+    color: #000;
+}
+body.white ::-moz-selection {
+    background: white;
+}
+body.grey ::selection { 
+    background: grey;
+}
+body.grey ::-moz-selection {
+    background: grey;
+}
+
+/*** 1.2.2. Icons ***/
+.icon {
+    font-family: batchregular;
+    font-style: normal;
+}
+
+/*** 1.2.3. Headings ***/
+h1, h2, h3, h4, h5, h6 {
+    font-family: NovecentowideMedium;
+    color: #000;
+}
+h1 {
+    font-family: NovecentowideLight;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0px 0px 1px #fff;
+    text-align: center;
+    line-height: 45px;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+    line-height: 45px;
+    text-align: center;
+    text-shadow: 0 0 1px #FFFFFF;
+    font-family: NovecentowideLight;
+}
+h3 {
+    color: #000;
+    font-size: 15px;
+    font-family: NovecentowideLight;
+    font-weight: 100;
+}
+section h3 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*** 1.2.4. Anchors ***/
+a {
+    text-decoration: none;
+    color: #579f72;
+}
+
+/*** 1.2.5. Page wrap ***/
+#page_wrap {
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../img/backgrounds/wood.png");
+    background-origin: padding-box;
+    background-position: 50% 100%;
+    background-repeat: repeat;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/** 1.3 Loading **/
+/*** 1.3.1. Ripples ***/
+.ripple {
+    background-attachment: fixed;
+    background-color: #fff;
+    background-image: url("../img/overlay/sharp.jpg");
+    background-position: 50% 100%;
+    background-size: 120% auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-radius: 100%;
+    border: 0px solid transparent;
+    height: 0px;
+    width: 0px;
+}
+.ripple.complete {
+    border-radius: 0;
+}
+.ripple.single {
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 1;
+}
+
+/*** 1.3.2. Main tab ***/
+.mainTab {
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+.mainTab > div {
+    opacity: 0;
+    min-height: 100px;
+    margin-top: -50px;
+    position: relative;
+    top: 50%;
+    background: transparent;
+    border-radius: 5px;
+}
+
+/*** 1.3.3. Logo ***/
+.mainTab .logo {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("../img/logo.png");
+    background-origin: padding-box;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 100% 100% 100% 100%;
+    display: inline-block;
+    height: 0;
+    line-height: 100px;
+    margin: 0 auto;
+    position: relative;
+    vertical-align: top;
+    width: 0;
+}
+.mainTab > div .title {
+    text-align: center;
+    border-radius: 20px;
+    font-family: NovecentowideBook;
+    vertical-align: middle;
+    line-height: 100px;
+    font-size: 28px;
+    color: #fff;
+}
+.mainTab > div > div {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+/*** 1.3.4. Complete tab ***/
+.mainTab > div.complete {
+    
+}
+.mainTab > div.complete > .content {
+    background: url("../img/backgrounds/wood.png") repeat 0 0 fixed #fff;
+    font-family: NovecentowideLight;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000;
+    padding: 10px 0;
+    box-shadow: 0px -4px 0px rgba(255,255,255,0.5);
+}
+.mainTab > div.complete > .content b, .mainTab > div.complete > .content em, .mainTab > div.complete > .content strong{
+    font-family: NovecentowideBold;
+    font-weight: 600;
+}
+.mainTab > div.complete > .footer {
+    background: url(../img/overlay/blurred.jpg) fixed 50% 100% transparent;
+    background-size: 120% auto;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Pt Sans";
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+    display: none;
+}
+.mainTab > div.complete > .title {
+    background: url(../img/overlay/blurred.jpg) fixed 50% 100% transparent;
+    background-size: 120% auto;
+    border-radius: 5px 5px 0 0;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+/***1.3.5. Percentage bar ***/
+.loading-bar {
+    width: 100%;
+    height: 5px;
+    top: -2px;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+.loading-bar > .percent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+/* 2. Social */
+a.social {
+    background: none repeat scroll 0 0 #FF565C;
+    border-radius: 100% 100% 100% 100%;
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.5) inset;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: "Grands";
+    font-size: 35px;
+    height: 50px;
+    line-height: 50px;
+    margin: 5px;
+    opacity: 0.8;
+    text-decoration: none !important;
+    text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.5);
+    vertical-align: top;
+    width: 50px;
+}
+a.social:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+a.social:active {
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5) inset;
+    line-height: 55px;
+}
+
+/* 3. Slides */
+.slide {
+    display: none;
+}
+
+/** 3.1. Slide pages**/
+.content {
+    position: relative;
+    overflow: hidden;
+}
+.content .page {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 0;
+    padding: 20px;
+    font-family: "Pt Sans";
+}
+.content .page.first {
+    font-family: NovecentowideLight;
+}
+.content .page h1, .content .page h2, .content .page h3, .content .page h4, .content .page h5, .content .page h6 {
+    font-family: NovecentowideLight;
+    color: #000;
+} 
+.content .page.active {
+    z-index: 1;
+    left: 0;
+}
+.content .nav {
+    width: 40px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    right: 0;
+    z-index: 3;
+    background: url(../img/navigation.png) no-repeat 0 0 transparent;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.content .nav:hover {
+    opacity: 1;
+}
+.content .nav.prev {
+    left: 0;
+    right: none;
+}
+.content .nav.next {
+    background-position: 100% 0;
+}
+
+/* 4. Cells */
+.countdown {
+    padding-top: 5px;
+}
+.cell {
+    margin: 5px 2px;
+    width: 43px;
+    height: 80px;
+    display: inline-block;
+    position: relative;
+}
+.cell .bar {
+    background: none repeat scroll 0 0 #fff;
+    float: left;
+    height: 5px;
+    margin: 2px;
+    width: 5px;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+}
+.bar {
+    position: absolute;
+    border-radius: 3px;
+}
+.bar.b0, .bar.b3, .bar.b6 {
+    left: 5px;
+}
+.bar.b0.active, .bar.b3.active, .bar.b6.active {
+    width: 30px;
+    height: 5px;
+}
+.bar.b1, .bar.b2, .bar.b4, .bar.b5 {
+    top: 5px;
+    left: 0;
+}
+.bar.b1.active, .bar.b2.active, .bar.b4.active, .bar.b5.active {
+    height: 30px;
+    width: 5px;
+}
+.bar.b0 {
+    top: 0;
+}
+.bar.b3 {
+    top: 70px;    
+}
+.bar.b6 {
+    top: 35px;    
+}
+.bar.b1, .bar.b2 {
+    left: 35px;
+}
+.bar.b2, .bar.b4 {
+    top: 40px;
+}
+
+/* 5. Form tweaks */
+.btn {
+    text-shadow: none;
+    color: #fff;
+    font-family: Pt Sans;
+    border: none;
+    opacity: 0.8;
+    box-shadow: 0px -2px 0px rgba(0,0,0,0.2) inset !important;
+}
+.btn:hover {
+    border: none;
+    opacity: 1;
+    color: #fff;
+}
+.btn:active {
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.2) inset !important;
+}
+input, textarea {
+    border: none !important;
+    color: #000;
+    line-height: 26px !important;
+    display: inline-block;
+    min-height: 45px !important;
+    padding-left: 20px !important;
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.2) !important;
+}
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* 6. Responsiveness */
+/** 6.1. Max 479px **/
+@media (max-width: 479px) {
+    .ripple, .mainTab > div.complete > .footer, .mainTab > div.complete > .title {
+        background-size: auto 120%;
+    }
+}
+/** 6.2. Min 480px **/
+@media (min-width: 480px) {
+    .ripple, .mainTab > div.complete > .footer, .mainTab > div.complete > .title {
+        background-size: auto 120%;
+    }
+}
+/** 6.3. Min 768px **/
+@media (min-width: 768px) {
+}
+/** 6.4. Min 980px **/
+@media (min-width: 980px) {
+
+}
+/** 6.5. Min 1200px **/
+@media (min-width: 1200px) {
+
+}
+
+/** 6.6. Portrait **/
+@media screen and (orientation:portrait) {
+    .ripple, .mainTab > div.complete > .footer, .mainTab > div.complete > .title {
+        background-size: auto 120%;
+    }
+}
+
+/** 6.7. Landscape **/
+@media screen and (orientation:landscape) {
+    .ripple, .mainTab > div.complete > .footer, .mainTab > div.complete > .title {
+        background-size: 120% auto;
+    }
+}
