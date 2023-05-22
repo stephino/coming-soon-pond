@@ -1,1 +1,0 @@
-{"status": true, "message": "Thank you! You will be the first to know when we launch."}
